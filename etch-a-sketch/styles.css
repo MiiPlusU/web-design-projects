@@ -1,0 +1,17 @@
+#grid-squares {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    gap: 10px;
+    justify-content: space-between; /* Distributes the squares evenly */
+}
+
+#grid-squares div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    flex: 1 1 calc(33.33% - 10px); /* Each div takes up roughly 1/3rd of the row minus the gap */
+    height: calc(33.33% - 10px); /* Adjust height to fit proportionally */
+}
