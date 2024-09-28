@@ -1,0 +1,63 @@
+.calculator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+    height: 50vh;
+    background-color: gray;
+    border: 10px solid black;
+}
+
+.screen {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 40px;
+    border: 5px solid;
+    background-color: black;
+    color: white;
+    width: 40vh;
+    text-align: right;
+    font-size: 2rem; /* Adjust font size for better visibility */
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    height: 80px;
+}
+
+.number-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+    flex: 2; /* Takes 2/3 of the space */
+    padding: 5px;
+}
+
+.operator-buttons {
+    display: flex;
+    flex-direction: column; /* Stack operator buttons vertically */
+    flex: 1; /* 1/3 width */
+    padding: 5px;
+    justify-content: space-between; /* Space operator buttons evenly */
+}
+
+.operator-buttons button {
+    width: 95%;
+}
+
+button {
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem; /* Button height */
+    width: calc(33.33% - 10px); /* Three buttons per row with some spacing */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: darkgray;
+}
